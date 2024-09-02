@@ -1,1 +1,1 @@
-Sell and Close Account script, for clean our wallet.
+Sell and Close Account testing script.
