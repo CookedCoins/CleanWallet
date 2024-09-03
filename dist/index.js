@@ -91,7 +91,7 @@ function main() {
         // REPLACE BU YOUR RPC NODE CONNECTION
         const solanaConnection = new web3_js_1.Connection('https://api.mainnet-beta.solana.com');
         // REPLACE BY YOUR WALLET
-        const main_wallet_decoded = bs58_1.default.decode("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+        const main_wallet_decoded = bs58_1.default.decode("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
         const wallet_keypair = web3_js_1.Keypair.fromSecretKey(main_wallet_decoded);
         console.log(new Date(), "CookedCoins Fetching Token Data in Wallet");
         const token_data = yield solanaConnection.getParsedTokenAccountsByOwner(wallet_keypair.publicKey, { programId: new web3_js_1.PublicKey(TOKEN_PROGRAM_ID) });

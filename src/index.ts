@@ -102,7 +102,7 @@ async function main(){
     const solanaConnection = new Connection('https://api.mainnet-beta.solana.com');
 
     // REPLACE BY YOUR WALLET
-    const main_wallet_decoded = bs58.decode("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+    const main_wallet_decoded = bs58.decode("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
     const wallet_keypair = Keypair.fromSecretKey(main_wallet_decoded);
 
     console.log(new Date(),"CookedCoins Fetching Token Data in Wallet");    
